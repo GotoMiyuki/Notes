@@ -8,4 +8,4 @@ int main() {
 }
 //the point of solution is to move the binary string respectively.However,it still turns out that I'm a green hand while I don't know the Format specifier of strings.
 https://en.cppreference.com/w/c/io/fprintf
-//the table in the web shows the format specifiers.
+//the table in the web shows the format specifiers.“char”是默认带符号的
