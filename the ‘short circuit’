@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main(){
+int a, b, c, d;
+a = b = c = 0;
+d = a++ || ++b || c++;//短路效应以及区分++i和i++
+//逻辑运算短路等价于 if … else if … 多路分支语句
+printf("%d%d%d%d", a, b, c, d);
+}
