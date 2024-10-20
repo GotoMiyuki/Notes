@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main() {
+double radius, area;
+const double PI = 3.14;
+printf("input radius:");
+scanf("%lf",&radius);
+/*compute area*/
+area = 0;//如果没有这句，程序会出现什么问题？--->初始化作用，有的系统不会出现问题（自动赋值为0），有的系统会（自动赋值为其他东西）
+if (radius > 0)
+area = radius * radius * PI;
+printf("the area for the circle of redius %lf is %lf",radius, area);
+}
