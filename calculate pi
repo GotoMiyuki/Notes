@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>//打印圆周率
+int main() {
+float pi = 0;
+int i = 1;
+const double eps = 1e-6; //精度保证5位
+while ( 1.0/i > eps) {  //不适合用 for 语句
+pi += 1.0/i;
+i++;i++;
+pi -= 1.0/i;
+i++;i++;
+}//what a brilliant code!
+pi *= 4;
+printf("%.5f\n",pi);
+}
+//前提已知圆周率公式{\displaystyle \pi =\sum _{k=0}^{\infty }{\frac {4(-1)^{k}}{2k+1}}}
